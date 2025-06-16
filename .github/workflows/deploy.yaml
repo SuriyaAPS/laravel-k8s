@@ -37,4 +37,3 @@ jobs:
             cd /var/www/html/laravel-k8s
             git pull
             php artisan migrate
-            php artisan optimize
