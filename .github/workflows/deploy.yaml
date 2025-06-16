@@ -22,6 +22,8 @@ jobs:
       - name: Test
         run: |-
           php composer.phar install
+          cp .env.example .env
+          php artisan key:generate
           php artisan test
 
       - name: Deployment
